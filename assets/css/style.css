@@ -1,0 +1,139 @@
+/* view: index */
+/* --> Menu */
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 1px dashed red; */
+}
+
+body, html {
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.cover {
+    background: url('../img/cover.jpeg') center;
+    /* backdrop-filter: blur(1px); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: aliceblue;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 100%;
+    display: flex
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.section {
+    margin-top: 100px!important;
+    margin-bottom: 100px!important;
+    width: 80%;
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    /* border: 1px dashed red; */
+}
+
+.section p.title {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.section p.presentation {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.section p.text {
+    font-size: 1rem;
+    color: white;
+    max-width:60%;
+}
+
+
+.section a button {
+    max-width: 120px;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    color: white;
+    background: rgb(94, 82, 199);
+}
+
+.section a button:hover {
+    max-width: 120px;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    color: white;
+    background: rgb(76, 65, 170);
+}
+
+
+@media only screen and (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        /* display: none; */
+        border-bottom: 1px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        max-width: 100%;
+        display: block
+    }
+
+    .section {
+        width: 80%;
+        height: 100%
+    }
+
+}
